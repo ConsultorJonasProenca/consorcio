@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Jonas de Proença</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Menu Lateral -->
+        <aside class="sidebar">
+            <img src="img/logo.png" alt="Logo Jonas de Proença" class="logo">
+            <p class="nome">Jonas de Proença</p>
+            
+            <div class="social">
+                  <!-- FACEBOOK ATUALIZADO -->
+                <a href="https://www.facebook.com/consultorjonas/" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+
+                <!-- GOOGLE AGENDA (como fizemos antes) -->
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Reuniao%20com%20Jonas%20de%20Proenca&details=Agendamento%20para%20discutir%20oportunidades%20e%20projetos.&add=consultorjonasdeproenca@gmail.com" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   aria-label="Agendar Reunião no Google Agenda">
+                    <i class="fas fa-calendar-days"></i>
+                </a>
+
+                <!-- INSTAGRAM (como fizemos antes) -->
+                <a href="https://www.instagram.com/consultorjonasdeproenca/" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <!-- WHATSAPP ATUALIZADO -->
+                <a href="http://wa.me/554199696044?text=Ol%C3%A1%20tudo%20bem%3F%20Gostaria%20de%20conhecer%20melhor%20este%20produto." 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+            
+            <nav id="menu"></nav>
+        </aside>
+
+        <!-- Conteúdo Principal da Página de Contato -->
+        <main class="content-section">
+            <header class="section-header">
+                <h1>Entre em Contato</h1>
+                <p>Ficarei feliz em ouvir de você! Preencha o formulário abaixo ou utilize um dos canais diretos.</p>
+            </header>
+
+            <div class="contact-page-content">
+                <div class="contact-info-map-wrapper">
+                    <!-- Informações de Contato Direto -->
+                    <div class="contact-details">
+                        <h2>Informações de Contato</h2>
+                        <ul>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>São José dos Pinhais, PR, Brasil</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+5541999696044">+55 41 99969-6044</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:consultorjonasdeproenca@gmail.com">consultorjonasdeproenca@gmail.com</a>
+                            </li>
+                             <li>
+                                <i class="fas fa-globe"></i>
+                                <a href="http://www.example.com" target="_blank" rel="noopener noreferrer">www.example.com</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Mini Mapa -->
+                    <div class="map-container">
+                        <h2>Localização</h2>
+                        <!-- Substitua o src pelo embed do Google Maps da sua localização específica se desejar -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115143.97280009093!2d-49.29008689726563!3d-25.533394900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcf0add8d84531%3A0x4d63a64921503707!2sS%C3%A3o%20Jos%C3%A9%20dos%20Pinhais%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                            width="600" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Mapa de São José dos Pinhais">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Formulário de Contato -->
+                <div class="contact-form-container">
+                    <h2>Envie uma Mensagem</h2>
+                    <form action="https://formspree.io/f/xvgrpgdl" method="post">
+                        <!-- Substitua pelo seu Access Key do StaticForms -->
+                        
+                       
+                        <!-- Opcional: Assunto do e-mail que você receberá -->
+                        <input type="hidden" name="subject" value="Novo Contato do Portfólio - {{ nome }}">
+
+                        <div class="form-group">
+                            <label for="nome">Nome Completo:</label>
+                            <input type="text" id="nome" name="name" placeholder="Seu nome completo" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Seu E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="assunto-form">Assunto:</label>
+                            <input type="text" id="assunto-form" name="messageSubject" placeholder="Assunto da mensagem" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Sua Mensagem:</label>
+                            <textarea id="mensagem" name="message" rows="6" placeholder="Digite sua mensagem aqui..." required></textarea>
+                        </div>
+                        
+                        <!-- Opcional: Captcha para evitar spam (recomendado) -->
+                        <input type="hidden" name="replyTo" value="@"> <!-- Responde ao e-mail do remetente -->
+                        <input type="text" name="honeypot" style="display: none;"> <!-- Campo "honeypot" para spam bots -->
+
+
+                        <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+</html>
